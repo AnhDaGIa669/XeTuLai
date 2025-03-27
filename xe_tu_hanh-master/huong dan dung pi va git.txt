@@ -1,0 +1,187 @@
+<<<<<<< HEAD
+startx
+sudo raspi-config
+
+1. Tắt GUI và khởi động ở chế độ dòng lệnh
+Tắt GUI ngay lập tức:
+Chạy lệnh sau để tắt GUI đang chạy mà không khởi động lại:
+
+	sudo systemctl stop lightdm
+
+Ngăn GUI tự khởi động khi bật máy:
+ Đặt hệ thống khởi động ở chế độ dòng lệnh bằng cách:
+ Chỉnh sửa file cấu hình:
+
+	sudo raspi-config
+
+Chọn:
+System Options > Boot / Auto Login
+Chọn Console (Không có giao diện đồ họa).
+
+Khởi động lại:
+
+	sudo reboot
+
+Bật lại GUI khi cần:
+Khi cần sử dụng GUI, bạn có thể khởi động lại nó bằng lệnh:
+
+	sudo systemctl start lightdm
+
+Kiểm tra tài nguyên hệ thống
+Sau khi tắt GUI, bạn có thể kiểm tra mức sử dụng tài nguyên để đảm bảo hệ thống đang ở trạng thái tối ưu:
+Kiểm tra RAM:
+
+	free -h
+
+Kiểm tra tải CPU:
+
+	top
+
+4. Lựa chọn khởi động GUI chỉ khi cần
+Nếu bạn vẫn muốn sử dụng GUI thỉnh thoảng nhưng không muốn nó khởi động mặc định, bạn có thể cấu hình hệ thống khởi động ở chế độ dòng lệnh và chỉ khởi động GUI khi cần:
+
+	startx
+
+5. các lệnh git 
+
+1. nếu muốn cập nhập lại thư mục mình muốn 
+
+  git status ( kiểm tra trạng thái )
+
+Commit các thay đổi:
+
+ git add .
+
+ git commit -m "Mô tả các thay đổi"
+
+ git pull (để cập nhập lại)
+
+2. các lệnh cơ bản
+(git clone https://github.com/hoangjerry23/xe_tu_hanh.git) ( tải toàn bộ dự án về )
+
+(git add .): Thêm tất cả các file đã thay đổi vào staging area.
+
+git rm <file> : Xóa một file khỏi kho lưu trữ.
+
+git mv <old_file> <new_file>: Đổi tên hoặc di chuyển một file.
+
+git commit -m "Thông điệp commit": Lưu các thay đổi đã thêm vào staging area thành một commit mới. Thông điệp commit giúp bạn dễ dàng theo dõi lịch sử thay đổi.
+
+git status: Hiển thị trạng thái hiện tại của kho lưu trữ, bao gồm các file đã thay đổi, chưa được theo dõi, hoặc đang trong staging area.
+
+git log: Hiển thị lịch sử các commit
+
+Quản lý các nhánh
+
+git branch: Liệt kê tất cả các nhánh.
+
+git branch <name>: Tạo một nhánh mới.
+
+git checkout <name>: Chuyển sang làm việc trên nhánh khác.
+
+git merge <name>: Hợp nhất một nhánh vào nhánh hiện tại.
+
+Các lệnh khác hữu ích
+
+git reset --hard <commit>: Quay lại một commit cụ thể.
+
+git revert <commit>: Hủy bỏ một commit.
+
+git stash: Tạm thời lưu các thay đổi chưa commit.
+
+git stash pop: Khôi phục lại các thay đổi đã stash.
+
+=======
+startx
+sudo raspi-config
+
+1. Tắt GUI và khởi động ở chế độ dòng lệnh
+Tắt GUI ngay lập tức:
+Chạy lệnh sau để tắt GUI đang chạy mà không khởi động lại:
+
+	sudo systemctl stop lightdm
+
+Ngăn GUI tự khởi động khi bật máy:
+ Đặt hệ thống khởi động ở chế độ dòng lệnh bằng cách:
+ Chỉnh sửa file cấu hình:
+
+	sudo raspi-config
+
+Chọn:
+System Options > Boot / Auto Login
+Chọn Console (Không có giao diện đồ họa).
+
+Khởi động lại:
+
+	sudo reboot
+
+Bật lại GUI khi cần:
+Khi cần sử dụng GUI, bạn có thể khởi động lại nó bằng lệnh:
+
+	sudo systemctl start lightdm
+
+Kiểm tra tài nguyên hệ thống
+Sau khi tắt GUI, bạn có thể kiểm tra mức sử dụng tài nguyên để đảm bảo hệ thống đang ở trạng thái tối ưu:
+Kiểm tra RAM:
+
+	free -h
+
+Kiểm tra tải CPU:
+
+	top
+
+4. Lựa chọn khởi động GUI chỉ khi cần
+Nếu bạn vẫn muốn sử dụng GUI thỉnh thoảng nhưng không muốn nó khởi động mặc định, bạn có thể cấu hình hệ thống khởi động ở chế độ dòng lệnh và chỉ khởi động GUI khi cần:
+
+	startx
+
+5. các lệnh git 
+
+1. nếu muốn cập nhập lại thư mục mình muốn 
+
+  git status ( kiểm tra trạng thái )
+
+Commit các thay đổi:
+
+ git add .
+
+ git commit -m "Mô tả các thay đổi"
+
+ git pull (để cập nhập lại)
+
+2. các lệnh cơ bản
+(git clone https://github.com/hoangjerry23/xe_tu_hanh.git) ( tải toàn bộ dự án về )
+
+(git add .): Thêm tất cả các file đã thay đổi vào staging area.
+
+git rm <file> : Xóa một file khỏi kho lưu trữ.
+
+git mv <old_file> <new_file>: Đổi tên hoặc di chuyển một file.
+
+git commit -m "Thông điệp commit": Lưu các thay đổi đã thêm vào staging area thành một commit mới. Thông điệp commit giúp bạn dễ dàng theo dõi lịch sử thay đổi.
+
+git status: Hiển thị trạng thái hiện tại của kho lưu trữ, bao gồm các file đã thay đổi, chưa được theo dõi, hoặc đang trong staging area.
+
+git log: Hiển thị lịch sử các commit
+
+Quản lý các nhánh
+
+git branch: Liệt kê tất cả các nhánh.
+
+git branch <name>: Tạo một nhánh mới.
+
+git checkout <name>: Chuyển sang làm việc trên nhánh khác.
+
+git merge <name>: Hợp nhất một nhánh vào nhánh hiện tại.
+
+Các lệnh khác hữu ích
+
+git reset --hard <commit>: Quay lại một commit cụ thể.
+
+git revert <commit>: Hủy bỏ một commit.
+
+git stash: Tạm thời lưu các thay đổi chưa commit.
+
+git stash pop: Khôi phục lại các thay đổi đã stash.
+
+>>>>>>> 3e5ccac2dd9658a366f93c5caa10c607b7ce6810

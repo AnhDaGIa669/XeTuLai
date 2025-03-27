@@ -1,0 +1,30 @@
+**xe-tu-lai/**  
+├── **AI/**  
+│   ├── **camera/**  
+│   │   ├── **calibration.py**       # Mã hiệu chỉnh camera  
+│   │   └── **lane_detection.py**    # Mã phát hiện làn đường  
+│   ├── **models/**  
+│   │   ├── **traffic_sign_model/**  # Mô hình nhận diện biển báo giao thông  
+│   │   └── **lane_model/**          # Mô hình phát hiện làn đường  
+│   ├── **scripts/**  
+│   │   ├── **main.py**              # Tệp chính xử lý AI  
+│   │   ├── **utils.py**             # Hàm hỗ trợ AI  
+│   │   └── **preprocess.py**        # Xử lý dữ liệu đầu vào  
+│   ├── **data/**  
+│   │   ├── **raw/**                 # Dữ liệu gốc  
+│   │   └── **processed/**           # Dữ liệu đã qua xử lý  
+│   └── **README.md**                # Hướng dẫn về AI  
+├── **Phan-cung/**  
+│   ├── **dieu-khien/**  
+│   │   ├── **motor_control.py**     # Điều khiển động cơ  
+│   │   └── **sensor_control.py**    # Điều khiển cảm biến  
+│   ├── **thanh-phan/**  
+│   │   ├── **connection_diagram.png** # Sơ đồ kết nối phần cứng  
+│   └── **README.md**                # Hướng dẫn về phần cứng  
+├── **chia-se/**  
+│   ├── **cau-hinh/**  
+│   │   └── **settings.py**          # Tệp cấu hình chung  
+│   └── **nhat-ky/**  
+│       └── **run_logs.txt**         # Nhật ký chạy hệ thống  
+├── **README.md**                    # Mô tả tổng quan dự án  
+└── **requirements.txt**             # Các thư viện cần thiết  
